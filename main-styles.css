@@ -1,0 +1,222 @@
+/*
+8b    d8    db    88 88b 88
+88b  d88   dPYb   88 88Yb88
+88YbdP88  dP__Yb  88 88 Y88
+88 YY 88 dP""""Yb 88 88  Y8
+*/
+* {
+    font-family: "Pathway One Gothic", sans-serif;
+    color: rgb(219,152,21);
+}
+body {
+    background-color: #000534;
+    height: 100vh;
+    width: 100vw;
+}
+#wrapper {
+    background-image: url("chocolate-wood.jpg");
+    background-attachment: fixed;
+    background-size: contain;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    height: 80%;
+    width: 80%;
+    float: right;
+    text-align: center;
+}
+#name_plate {
+    width: 45%;
+    float: left;
+    padding-left: 0px;
+    margin-top: -20px;
+}
+#Fort_Collins {
+    display: inline-block;
+    width: 17.5%;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 0.5%;
+    border-radius: 10px;
+    float: left;
+    border: 4px solid rgb(219, 152, 21);
+    box-sizing: border-box;
+}
+#serving,
+#est {
+    font-family: "Opificio", sans-serif;
+    font-size: 1.4em;
+    color: rgb(219, 152, 21);
+    display: inline-block;
+    width: 17.5%;
+    margin: 20px 5px 0;
+    padding: 10px;
+    float: left;
+    text-align: center;
+}
+#serving {
+    margin-top: 8%;
+}
+#est {
+    margin-top: 0.5%;
+}
+/*
+    888888 888888 Yb  dP 888888
+      88   88__    YbdP    88
+      88   88""    dPYb    88
+      88   888888 dP  Yb   88
+*/
+@font-face {
+    font-family: 'Docker';
+    src: url('fonts/Docker-One.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Opificio";
+    src: url('fonts/Opificio.ttf') format('truetype');
+}
+h1 {
+    font-family: "Docker", sans-serif;
+    font-variant: small-caps;
+    font-size: 2.2em;
+    padding: 40px 20px 20px 20px;
+    margin: 0 auto;
+    text-shadow: 0 0 20px black;
+}
+.level_one {
+    font-family: 'Oswald', serif;
+    font-size: 1em;
+    line-height: 1.1em;
+    padding: 10px;
+    margin: 10px auto;
+    width: 900px;
+    color: black;
+    background-color: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+    text-align: left;
+}
+h2 {
+    font-family: "Docker", sans-serif;
+    font-variant: small-caps;
+    font-size: 1.4em;
+    padding: 20px 0 0 20px;
+    color: rgb(219, 152, 21);
+    text-align: left;
+    text-shadow: 0 0 20px black;
+}
+.level_two {
+    font-family: "Kameron", sans-serif;
+    font-size: .85em;
+    line-height: 1.1em;
+    margin: 0;
+    margin-left: 20px;
+    padding: 10px;
+    width: 50%;
+    float: left;
+    color: black;
+    background-color: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+    text-align: left;
+}
+.quote_box {
+    background-color: rgba(255,255,255,0.08);
+    padding: 10px;
+    margin-right: 40px;
+    float: right;
+    width: 33%;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+}
+h3 {
+    font-family: "Opificio", sans-serif;
+    margin-left: 10px;
+    font-size: 1.2em;
+    padding: 0px;
+    color: rgb(219, 152, 21);
+    text-align: left;
+    text-shadow: 0 0 20px black;
+}
+.level_three {
+    font-family: "Kameron", serif;
+    font-size: .75em;
+    line-height: 1.1em;
+    padding: 10px;
+    color: black;
+    text-align: left;
+}
+
+/*
+88b 88    db    Yb    dP     88""Yb    db    88b 88 888888 88
+88Yb88   dPYb    Yb  dP      88__dP   dPYb   88Yb88 88__   88
+88 Y88  dP__Yb    YbdP       88"""   dP__Yb  88 Y88 88""   88  .o
+88  Y8 dP""""Yb    YP        88     dP""""Yb 88  Y8 888888 88ood8
+*/
+nav ul {
+    list-style: none;
+    background-color: #000534;
+    position: relative;
+    left: 13%;
+
+}
+nav li {
+    float: left;
+    margin: 20px 20px 0;
+    padding: 7px;
+    background-image: url("chocolate-wood.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    border-radius: 50%;
+    color: rgb(219,152,21);
+    height: 112px;
+    width: 112px;
+    text-align: center;
+    justify-content: center;
+}
+nav li a {
+    display: inline-block;
+    font-family: Docker, sans-serif;
+    font-weight: 700;
+    font-size: 1.25em;
+    font-variant: small-caps;
+    text-decoration: none;
+    padding-top: 40%;
+    text-shadow: 0 0 20px black;
+}
+#first {
+    position: relative;
+    left: -3px;
+}
+#last {
+    margin-right: 2%;
+}
+
+/*
+888888  dP"Yb   dP"Yb  888888 888888 88""Yb
+88__   dP   Yb dP   Yb   88   88__   88__dP
+88""   Yb   dP Yb   dP   88   88""   88"Yb
+88      YbodP   YbodP    88   888888 88  Yb
+*/
+footer {
+    font-size: .85em;
+    font-family: "Opificio", sans-serif;
+    clear: both;
+    position: relative;
+    bottom: 20%;
+    text-align: left;
+    color: rgb(219, 152, 21);
+}
+.social {
+    padding: 72px 0.50%  40px;
+}
+footer p {
+    font-size: .85em;
+    font-family: 'Oswald', serif;
+    clear: both;
+    position: relative;
+    bottom: 30%;
+    left: 15px;
+    text-align: left;
+    color: rgb(219, 152, 21);
+}
