@@ -7,6 +7,7 @@
 * {
     font-family: "Pathway One Gothic", sans-serif;
     color: rgb(219,152,21);
+    overflow-x: hidden;
 }
 body {
     background-color: #000534;
@@ -14,8 +15,7 @@ body {
     width: 100vw;
 }
 #wrapper {
-    background-image: url("chocolate-wood.jpg");
-    background-attachment: fixed;
+    background: url("chocolate-wood.jpg") fixed;
     background-size: contain;
     border-radius: 10px;
     margin: 0;
@@ -33,6 +33,7 @@ body {
 }
 #Fort_Collins {
     display: inline-block;
+    opacity: .8;
     width: 17.5%;
     height: auto;
     margin-left: 15px;
@@ -55,7 +56,7 @@ body {
     text-align: center;
 }
 #serving {
-    margin-top: 8%;
+    margin-top: 11%;
 }
 #est {
     margin-top: 0.5%;
@@ -85,7 +86,7 @@ h1 {
 .level_one {
     font-family: 'Oswald', serif;
     font-size: 1em;
-    line-height: 1.1em;
+    line-height: 1.3;
     padding: 10px;
     margin: 10px auto;
     width: 900px;
@@ -105,9 +106,9 @@ h2 {
     text-shadow: 0 0 20px black;
 }
 .level_two {
-    font-family: "Kameron", sans-serif;
+    font-family: 'Oswald', serif;
     font-size: .85em;
-    line-height: 1.1em;
+    line-height: 1.3;
     margin: 0;
     margin-left: 20px;
     padding: 10px;
@@ -139,9 +140,9 @@ h3 {
     text-shadow: 0 0 20px black;
 }
 .level_three {
-    font-family: "Kameron", serif;
+    font-family: 'Oswald', serif;
     font-size: .75em;
-    line-height: 1.1em;
+    line-height: 1.3;
     padding: 10px;
     color: black;
     text-align: left;
@@ -157,7 +158,7 @@ nav ul {
     list-style: none;
     background-color: #000534;
     position: relative;
-    left: 13%;
+    left: 20%;
 
 }
 nav li {
@@ -208,15 +209,13 @@ footer {
     color: rgb(219, 152, 21);
 }
 .social {
-    padding: 72px 0.50%  40px;
+    padding: 62px 0.50%  40px;
 }
 footer p {
     font-size: .85em;
     font-family: 'Oswald', serif;
     clear: both;
-    position: relative;
-    bottom: 30%;
-    left: 15px;
+    margin: 25px 0 10px 15px;
     text-align: left;
     color: rgb(219, 152, 21);
 }
