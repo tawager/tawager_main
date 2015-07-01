@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Docker';
+  src: url("fonts/Docker-One.ttf") format("truetype"); }
+@font-face {
+  font-family: "Opificio";
+  src: url("fonts/Opificio.ttf") format("truetype"); }
 /*
 8b    d8    db    88 88b 88
 88b  d88   dPYb   88 88Yb88
@@ -5,148 +11,41 @@
 88 YY 88 dP""""Yb 88 88  Y8
 */
 * {
-    font-family: "Pathway One Gothic", sans-serif;
-    color: rgb(219,152,21);
-    overflow-x: hidden;
-}
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  color: black;
+  overflow-x: hidden; }
+
 body {
-    background-color: #000534;
-    height: 100vh;
-    width: 100vw;
-}
+  background-color: #000534;
+  height: 100%;
+  width: 100%; }
+  body a {
+    font-weight: inherit; }
+
+div.quote_box:hover {
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  background-color: white; }
+
 #wrapper {
-    background: url("chocolate-wood.jpg") fixed;
-    background-size: contain;
-    border-radius: 10px;
-    margin: 0;
-    padding: 0;
-    height: 80%;
-    width: 80%;
-    float: right;
-    text-align: center;
-}
+  background: url("bgs/wp015.jpg") no-repeat fixed;
+  background-size: cover;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 1.5%;
+  width: 80%;
+  height: auto;
+  float: right;
+  text-align: center; }
+
 #name_plate {
-    width: 45%;
-    float: left;
-    padding-left: 0px;
-    margin-top: -20px;
-}
-#Fort_Collins {
-    display: inline-block;
-    opacity: .8;
-    width: 17.5%;
-    height: auto;
-    margin-left: 15px;
-    margin-top: 0.5%;
-    border-radius: 10px;
-    float: left;
-    border: 4px solid rgb(219, 152, 21);
-    box-sizing: border-box;
-}
-#serving,
-#est {
-    font-family: "Opificio", sans-serif;
-    font-size: 1.4em;
-    color: rgb(219, 152, 21);
-    display: inline-block;
-    width: 17.5%;
-    margin: 20px 5px 0;
-    padding: 10px;
-    float: left;
-    text-align: center;
-}
-#serving {
-    margin-top: 11%;
-}
-#est {
-    margin-top: 0.5%;
-}
-/*
-    888888 888888 Yb  dP 888888
-      88   88__    YbdP    88
-      88   88""    dPYb    88
-      88   888888 dP  Yb   88
-*/
-@font-face {
-    font-family: 'Docker';
-    src: url('fonts/Docker-One.ttf') format('truetype');
-}
-@font-face {
-    font-family: "Opificio";
-    src: url('fonts/Opificio.ttf') format('truetype');
-}
-h1 {
-    font-family: "Docker", sans-serif;
-    font-variant: small-caps;
-    font-size: 2.2em;
-    padding: 40px 20px 20px 20px;
-    margin: 0 auto;
-    text-shadow: 0 0 20px black;
-}
-.level_one {
-    font-family: 'Oswald', serif;
-    font-size: 1em;
-    line-height: 1.3;
-    padding: 10px;
-    margin: 10px auto;
-    width: 900px;
-    color: black;
-    background-color: rgba(255,255,255,0.08);
-    border-radius: 10px;
-    box-shadow: 0 0 20px black;
-    text-align: left;
-}
-h2 {
-    font-family: "Docker", sans-serif;
-    font-variant: small-caps;
-    font-size: 1.4em;
-    padding: 20px 0 0 20px;
-    color: rgb(219, 152, 21);
-    text-align: left;
-    text-shadow: 0 0 20px black;
-}
-.level_two {
-    font-family: 'Oswald', serif;
-    font-size: .85em;
-    line-height: 1.3;
-    margin: 0;
-    margin-left: 20px;
-    padding: 10px;
-    width: 50%;
-    float: left;
-    color: black;
-    background-color: rgba(255,255,255,0.08);
-    border-radius: 10px;
-    box-shadow: 0 0 20px black;
-    text-align: left;
-}
-.quote_box {
-    background-color: rgba(255,255,255,0.08);
-    padding: 10px;
-    margin-right: 40px;
-    float: right;
-    width: 33%;
-    height: 250px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px black;
-}
-h3 {
-    font-family: "Opificio", sans-serif;
-    margin-left: 10px;
-    font-size: 1.2em;
-    padding: 0px;
-    color: rgb(219, 152, 21);
-    text-align: left;
-    text-shadow: 0 0 20px black;
-}
-.level_three {
-    font-family: 'Oswald', serif;
-    font-size: .75em;
-    line-height: 1.3;
-    padding: 10px;
-    color: black;
-    text-align: left;
-}
+  width: 45%;
+  float: left;
+  padding-left: 0;
+  margin-top: -20px; }
 
 /*
 88b 88    db    Yb    dP     88""Yb    db    88b 88 888888 88
@@ -154,44 +53,261 @@ h3 {
 88 Y88  dP__Yb    YbdP       88"""   dP__Yb  88 Y88 88""   88  .o
 88  Y8 dP""""Yb    YP        88     dP""""Yb 88  Y8 888888 88ood8
 */
-nav ul {
-    list-style: none;
-    background-color: #000534;
+@media screen and (max-width: 1475px) {
+  header.main_header nav.main_navigation {
     position: relative;
-    left: 20%;
-
-}
-nav li {
-    float: left;
+    top: 25px; } }
+@media screen and (max-width: 1275px) {
+  header.main_header nav.main_navigation {
+    top: 45px;
+    right: 15px; } }
+header.main_header nav.main_navigation ul {
+  max-width: 78%;
+  list-style: none;
+  background-color: #000534;
+  position: relative;
+  left: 16.5%;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+  @media screen and (max-width: 1475px) {
+    header.main_header nav.main_navigation ul {
+      left: 15%; } }
+  @media screen and (max-width: 1275px) {
+    header.main_header nav.main_navigation ul {
+      margin: 0;
+      padding: 0;
+      left: 23%; } }
+  header.main_header nav.main_navigation ul li {
     margin: 20px 20px 0;
     padding: 7px;
-    background-image: url("chocolate-wood.jpg");
-    background-attachment: fixed;
-    background-position: center;
+    background: url("bgs/wp015.jpg") no-repeat fixed right;
+    background-size: cover;
     border-radius: 50%;
-    color: rgb(219,152,21);
-    height: 112px;
+    color: #000534;
     width: 112px;
+    height: 112px;
     text-align: center;
-    justify-content: center;
-}
-nav li a {
+    justify-content: center; }
+    @media screen and (max-width: 1475px) {
+      header.main_header nav.main_navigation ul li {
+        border-radius: 10px;
+        width: 140px;
+        height: auto;
+        text-align: left; } }
+    @media screen and (max-width: 1275px) {
+      header.main_header nav.main_navigation ul li {
+        margin: 0;
+        background: #000534;
+        text-align: center; } }
+    header.main_header nav.main_navigation ul li a {
+      display: inline-block;
+      font-family: Docker, sans-serif;
+      font-weight: 700;
+      font-size: 1.25em;
+      font-variant: small-caps;
+      text-decoration: none;
+      padding-top: 40%;
+      color: #db9815;
+      text-shadow: 0 0 20px black; }
+      @media screen and (max-width: 1475px) {
+        header.main_header nav.main_navigation ul li a {
+          font-size: 1.1em;
+          padding-top: 20%; } }
+      header.main_header nav.main_navigation ul li a:hover {
+        border-bottom: 2px solid #db9815; }
+header.main_header nav.main_navigation #last {
+  margin-right: 0; }
+
+/*
+.dP"Y8 88 8888b.  888888 88""Yb    db    88""Yb
+`Ybo." 88  8I  Yb 88__   88__dP   dPYb   88__dP
+o.`Y8b 88  8I  dY 88""   88""Yb  dP__Yb  88"Yb
+8bodP' 88 8888Y"  888888 88oodP dP""""Yb 88  Yb
+*/
+div#sidebar {
+  position: relative;
+  top: 10%; }
+  div#sidebar #Fort_Collins {
     display: inline-block;
-    font-family: Docker, sans-serif;
-    font-weight: 700;
-    font-size: 1.25em;
-    font-variant: small-caps;
-    text-decoration: none;
-    padding-top: 40%;
-    text-shadow: 0 0 20px black;
-}
-#first {
-    position: relative;
-    left: -3px;
-}
-#last {
-    margin-right: 2%;
-}
+    opacity: .8;
+    max-width: 89%;
+    height: auto;
+    margin-left: 15px;
+    border-radius: 10px;
+    margin-top: 0.5%;
+    float: left;
+    box-sizing: border-box; }
+  div#sidebar #serving,
+  div#sidebar #est {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.4em;
+    font-weight: 300;
+    color: #db9815;
+    display: inline-block;
+    max-width: 89%;
+    margin: 20px 5px 0;
+    padding: 10px;
+    float: left;
+    text-align: center; }
+    @media screen and (max-width: 1275px) {
+      div#sidebar #serving,
+      div#sidebar #est {
+        font-size: 1em; } }
+  div#sidebar #serving {
+    margin-top: 11%; }
+  div#sidebar #est {
+    margin-top: 0.5%;
+    margin-left: 23%; }
+  @media screen and (max-width: 480px) {
+    div#sidebar {
+      display: none; } }
+
+/*
+    888888 888888 Yb  dP 888888
+      88   88__    YbdP    88
+      88   88""    dPYb    88
+      88   888888 dP  Yb   88
+*/
+h1 {
+  font-family: "Docker", sans-serif;
+  font-variant: small-caps;
+  margin-bottom: 0;
+  color: #db9815;
+  text-shadow: 0 0 20px black;
+  font-size: 2.5em;
+  padding: 0 20px 0 20px; }
+
+h2 {
+  font-family: "Docker", sans-serif;
+  font-variant: small-caps;
+  margin-bottom: 0;
+  color: #db9815;
+  text-shadow: 0 0 20px black;
+  font-size: 2.0em;
+  padding: 20px 0 0 20px;
+  margin-bottom: 0;
+  text-align: left; }
+
+h3 {
+  font-family: "Opificio", sans-serif;
+  color: #db9815;
+  margin-left: 10px;
+  font-size: 1.45em;
+  padding: 0;
+  text-justify: inter-word;
+  text-shadow: 0 0 20px black; }
+
+.level_one {
+  font-size: 1.25em;
+  line-height: 1.5;
+  width: 67%;
+  font-family: 'Oswald', serif;
+  font-weight: 300;
+  text-shadow: 0 0 1.25em rgba(0, 0, 0, 0.25), 0 -0.1ex 0 rgba(255, 255, 255, 0.125), 0 0.1ex 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 20px black;
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 10px;
+  padding: 2.85%;
+  margin: 10px;
+  text-align: left;
+  margin: 10px auto; }
+  .level_one:hover {
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    background-color: white; }
+  @media screen and (max-width: 1275px) {
+    .level_one {
+      background: rgba(255, 255, 255, 0.4); }
+      .level_one:hover {
+        background-color: rgba(255, 255, 255, 0.4); } }
+  @media screen and (max-width: 1000px) {
+    .level_one {
+      font-size: 1em;
+      line-height: 1.3;
+      width: 80%; } }
+
+.level_two {
+  font-size: 1.1em;
+  line-height: 1.5;
+  font-family: 'Oswald', serif;
+  font-weight: 300;
+  text-shadow: 0 0 1.25em rgba(0, 0, 0, 0.25), 0 -0.1ex 0 rgba(255, 255, 255, 0.125), 0 0.1ex 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 20px black;
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 10px;
+  padding: 2.85%;
+  margin: 10px;
+  text-align: left;
+  padding-top: 18.58%;
+  position: relative;
+  width: 50%;
+  float: left; }
+  .level_two:hover {
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    background-color: white; }
+  @media screen and (max-width: 1275px) {
+    .level_two {
+      background: rgba(255, 255, 255, 0.4); }
+      .level_two:hover {
+        background-color: rgba(255, 255, 255, 0.4); } }
+  @media screen and (max-width: 1000px) {
+    .level_two {
+      font-size: .9em;
+      line-height: 1.3; } }
+  .level_two span {
+    font-size: .9em;
+    font-style: italic;
+    text-indent: each-line; }
+  .level_two span#to_top {
+    text-align: center; }
+  .level_two img {
+    position: absolute;
+    top: 3.5%;
+    margin: .93% 6%; }
+  .level_two img#pi {
+    right: 5%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 48%; }
+  .level_two img#pi-logo {
+    width: 27%; }
+
+.quote_box {
+  overflow: visible;
+  background-color: rgba(255, 255, 255, 0.28);
+  padding: 0 20px 20px 20px;
+  margin: 1% 3.3% 2.1% 2.1%;
+  float: right;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+  text-justify: inter-word; }
+  .quote_box .level_three {
+    font-size: 0.95em;
+    line-height: 1.9;
+    text-align: left;
+    padding: 0 40px; }
+    @media screen and (max-width: 1000px) {
+      .quote_box .level_three {
+        font-size: .8em;
+        line-height: 1.3; } }
+    .quote_box .level_three span {
+      font-weight: 400;
+      font-style: italic; }
 
 /*
 888888  dP"Yb   dP"Yb  888888 888888 88""Yb
@@ -199,23 +315,61 @@ nav li a {
 88""   Yb   dP Yb   dP   88   88""   88"Yb
 88      YbodP   YbodP    88   888888 88  Yb
 */
-footer {
-    font-size: .85em;
-    font-family: "Opificio", sans-serif;
-    clear: both;
-    position: relative;
-    bottom: 20%;
-    text-align: left;
-    color: rgb(219, 152, 21);
-}
-.social {
-    padding: 62px 0.50%  40px;
-}
-footer p {
-    font-size: .85em;
+footer.main_footer {
+  height: 120px;
+  font-size: .85em;
+  font-family: "Opificio", sans-serif;
+  clear: both;
+  position: fixed;
+  top: 86%;
+  text-align: left;
+  color: #db9815; }
+  footer.main_footer p {
     font-family: 'Oswald', serif;
+    color: #db9815;
     clear: both;
-    margin: 25px 0 10px 15px;
-    text-align: left;
-    color: rgb(219, 152, 21);
-}
+    padding: 20px 10px 10px 15px; }
+  footer.main_footer .social {
+    padding: 5px; }
+  footer.main_footer .first_icon {
+    padding-left: 15px; }
+  @media screen and (max-width: 1275px) {
+    footer.main_footer p {
+      padding: 20px 0 10px 0;
+      font-size: .7em; }
+    footer.main_footer .social {
+      padding: 1px; } }
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */ }
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */ }
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */ }
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */ }
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */ }
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */ }
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */ }
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */ }
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */ }
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */ }
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */ }
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */ }
+/*# sourceMappingURL=main-styles.css.map */
+
+/*# sourceMappingURL=main-styles.css.map */

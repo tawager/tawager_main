@@ -1,0 +1,428 @@
+$text-shadow: 0 0 1.25em rgba(0,0,0,0.25),0 -0.1ex 0 rgba(255,255,255,0.125),0 .1ex 0 rgba(0,0,0,0.25);
+$box-shadow: 0 0 20px black;
+$p-background: rgba(255, 255, 255, 0.28);
+$gold: #db9815;
+$navy: #000534;
+@font-face {
+  font-family: 'Docker';
+  src: url("fonts/Docker-One.ttf") format("truetype"); }
+@font-face {
+  font-family: "Opificio";
+  src: url("fonts/Opificio.ttf") format("truetype"); }
+
+@mixin div-default {
+  background: url("bgs/wp015.jpg") no-repeat fixed;
+  background-size: cover;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 1.5%;
+  width: 80%;
+  height: auto;
+  float: right;
+}
+@mixin headline-default {
+  font-family: "Docker", sans-serif;
+  font-variant: small-caps;
+  margin-bottom: 0;
+  color: $gold;
+  text-shadow: $box-shadow;
+}
+@mixin p-default {
+  font-family: 'Oswald', serif;
+  font-weight: 300;
+  text-shadow: $text-shadow;
+  box-shadow: $box-shadow;
+  background: $p-background;
+  border-radius: 10px;
+  padding: 2.85%;
+  margin: 10px;
+  text-align: left;
+  &:hover {
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    background-color: rgb(255, 255, 255);
+  }
+  @media screen and (max-width: 1275px) {
+    background: rgba(255, 255, 255, 0.4);
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+  }
+}
+@mixin span-default {
+  font-size: .9em;
+  font-style: italic;
+  text-indent: each-line;
+}
+@mixin circle($w) {
+  width: $w;
+  height: $w;
+}
+
+/*
+8b    d8    db    88 88b 88
+88b  d88   dPYb   88 88Yb88
+88YbdP88  dP__Yb  88 88 Y88
+88 YY 88 dP""""Yb 88 88  Y8
+*/
+* {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  color:  black;
+  overflow-x: hidden; }
+
+body {
+  background-color: $navy;
+  height: 100%;
+  width: 100%;
+  a {
+    font-weight: inherit;
+  }
+}
+
+div.quote_box:hover {
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  background-color: rgb(255, 255, 255);
+}
+
+#wrapper {
+  @include div-default;
+  text-align: center;
+  }
+#name_plate {
+  width: 45%;
+  float: left;
+  padding-left: 0;
+  margin-top: -20px; }
+/*
+88b 88    db    Yb    dP     88""Yb    db    88b 88 888888 88
+88Yb88   dPYb    Yb  dP      88__dP   dPYb   88Yb88 88__   88
+88 Y88  dP__Yb    YbdP       88"""   dP__Yb  88 Y88 88""   88  .o
+88  Y8 dP""""Yb    YP        88     dP""""Yb 88  Y8 888888 88ood8
+*/
+header.main_header nav.main_navigation {
+  @media screen and (max-width: 1475px) {
+    position: relative;
+    top: 25px;
+  }
+  @media screen and (max-width: 1275px) {
+    top: 45px;
+    right: 15px;
+  }
+  ul {
+    max-width: 78%;
+    list-style: none;
+    background-color: $navy;
+    position: relative;
+    left: 16.5%;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    @media screen and (max-width: 1475px) {
+      left: 15%;
+    }
+    @media screen and (max-width: 1275px) {
+      margin: 0;
+      padding: 0;
+      left: 23%;
+    }
+    li {
+      margin: 20px 20px 0;
+      padding: 7px;
+      background: url("bgs/wp015.jpg") no-repeat fixed right;
+      background-size: cover;
+      border-radius: 50%;
+      color: #000534;
+      width: 112px;
+      height: 112px;
+      text-align: center;
+      justify-content: center;
+      @media screen and (max-width: 1475px) {
+        border-radius: 10px;
+        width: 140px;
+        height: auto;
+        text-align: left;
+      }
+      @media screen and (max-width: 1275px) {
+        margin: 0;
+        background: $navy;
+        text-align: center;
+      }
+      a {
+        display: inline-block;
+        font-family: Docker, sans-serif;
+        font-weight: 700;
+        font-size: 1.25em;
+        font-variant: small-caps;
+        text-decoration: none;
+        padding-top: 40%;
+        color: $gold;
+        text-shadow: 0 0 20px black;
+        @media screen and (max-width: 1475px) {
+          font-size: 1.1em;
+          padding-top: 20%;
+        }
+        &:hover {
+          border-bottom: 2px solid $gold;
+        }
+      }
+    }
+  }
+  #first {
+  }
+
+  #last {
+    margin-right: 0;
+  }
+}
+  /*
+  .dP"Y8 88 8888b.  888888 88""Yb    db    88""Yb
+  `Ybo." 88  8I  Yb 88__   88__dP   dPYb   88__dP
+  o.`Y8b 88  8I  dY 88""   88""Yb  dP__Yb  88"Yb
+  8bodP' 88 8888Y"  888888 88oodP dP""""Yb 88  Yb
+  */
+  div#sidebar {
+    position: relative;
+    top: 10%;
+    #Fort_Collins {
+      display: inline-block;
+      opacity: .8;
+      max-width: 89%;
+      height: auto;
+      margin-left: 15px;
+      border-radius: 10px;
+      margin-top: 0.5%;
+      float: left;
+      box-sizing: border-box; }
+
+    #serving,
+    #est {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.4em;
+      font-weight: 300;
+      color: $gold;
+      display: inline-block;
+      max-width: 89%;
+      margin: 20px 5px 0;
+      padding: 10px;
+      float: left;
+      text-align: center;
+      @media screen and (max-width: 1275px){
+        font-size: 1em;
+      }
+    }
+
+    #serving {
+      margin-top: 11%; }
+
+    #est {
+      margin-top: 0.5%;
+      margin-left: 23%;
+    }
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  /*
+      888888 888888 Yb  dP 888888
+        88   88__    YbdP    88
+        88   88""    dPYb    88
+        88   888888 dP  Yb   88
+  */
+
+  h1 {
+    @include headline-default;
+    font-size: 2.5em;
+    padding: 0 20px 0 20px;
+  }
+  h2 {
+    @include headline-default;
+    font-size: 2.0em;
+    padding: 20px 0 0 20px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  h3 {
+    font-family: "Opificio", sans-serif;
+    color: $gold;
+    margin-left: 10px;
+    font-size: 1.45em;
+    padding: 0;
+    text-justify: inter-word;
+    text-shadow: $box-shadow;
+  }
+  .level_one {
+    font-size: 1.25em;
+    line-height: 1.5;
+    width: 67%;
+    @include p-default;
+    margin: 10px auto;
+    @media screen and (max-width: 1000px){
+      font-size: 1em;
+      line-height: 1.3;
+      width: 80%;
+    }
+  }
+  .level_two {
+    font-size: 1.1em;
+    line-height: 1.5;
+    @include p-default;
+    padding-top: 18.58%;
+    position: relative;
+    width: 50%;
+    float: left;
+    @media screen and (max-width: 1000px){
+      font-size: .9em;
+      line-height: 1.3;
+    }
+    span {
+      @include span-default;
+    }
+    span#to_top {
+      text-align: center;
+    }
+    img {
+      position: absolute;
+      top: 3.5%;
+      margin: .93% 6%;
+    }
+    img#pi {
+      right: 5%;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      width: 48%
+    }
+    img#pi-logo {
+      width: 27%;
+    }
+  }
+
+  .quote_box {
+    overflow: visible;
+    background-color: $p-background;
+    padding: 0 20px 20px 20px;
+    margin: 1% 3.3% 2.1% 2.1%;
+    float: right;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+    text-justify: inter-word;
+    .level_three {
+      font-size: 0.95em;
+      line-height: 1.9;
+      text-align: left;
+      padding: 0 40px;
+      @media screen and (max-width: 1000px){
+        font-size: .8em;
+        line-height: 1.3;
+      }
+      span {
+        font-weight: 400;
+        font-style: italic;
+      }
+    }
+  }
+
+  /*
+  888888  dP"Yb   dP"Yb  888888 888888 88""Yb
+  88__   dP   Yb dP   Yb   88   88__   88__dP
+  88""   Yb   dP Yb   dP   88   88""   88"Yb
+  88      YbodP   YbodP    88   888888 88  Yb
+  */
+  footer.main_footer {
+    height: 120px;
+    font-size: .85em;
+    font-family: "Opificio", sans-serif;
+    clear: both;
+    position: fixed;
+    top: 86%;
+    text-align: left;
+    color: $gold;
+    p {
+      font-family: 'Oswald', serif;
+      color: $gold;
+      clear: both;
+      padding: 20px 10px 10px 15px;
+    }
+    .social {
+      padding: 5px;
+    }
+    .first_icon {
+      padding-left: 15px;
+    }
+    @media screen and (max-width: 1275px) {
+      p {
+        padding: 20px 0 10px 0;
+        font-size: .7em;
+      }
+      .social {
+        padding: 1px;
+      }
+    }
+  }
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+}
+/*# sourceMappingURL=main-styles.css.map */

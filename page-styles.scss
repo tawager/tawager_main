@@ -1,0 +1,626 @@
+$text-shadow: 0 0 1.25em rgba(0,0,0,0.25),0 -0.1ex 0 rgba(255,255,255,0.125),0 .1ex 0 rgba(0,0,0,0.25);
+$box-shadow: 0 0 20px black;
+$p-background: rgba(255, 255, 255, 0.28);
+$gold: #db9815;
+$navy: #000534;
+@font-face {
+  font-family: 'Docker';
+  src: url("fonts/Docker-One.ttf") format("truetype"); }
+@font-face {
+  font-family: "Opificio";
+  src: url("fonts/Opificio.ttf") format("truetype"); }
+
+@mixin div-default {
+  background: url("bgs/wp015.jpg") no-repeat fixed;
+  background-size: cover;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  width: 80%;
+  height: auto;
+  float: right;
+}
+@mixin headline-default {
+  font-family: "Docker", sans-serif;
+  font-variant: small-caps;
+  margin-bottom: 0;
+  color: $gold;
+  text-shadow: $box-shadow;
+}
+@mixin p-default {
+  font-family: 'Oswald', serif;
+  font-weight: 300;
+  text-shadow: $text-shadow;
+  box-shadow: $box-shadow;
+  background: $p-background;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  text-align: left;
+  @media screen and (max-width: 1275px) {
+     background: rgba(255, 255, 255, 0.4);
+  }
+  &:hover {
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    background-color: rgb(255, 255, 255);
+  }
+}
+@mixin span-default {
+  font-size: .9em;
+  font-style: italic;
+  text-indent: each-line;
+}
+
+/*
+88b 88    db    Yb    dP     88""Yb    db    88b 88 888888 88
+88Yb88   dPYb    Yb  dP      88__dP   dPYb   88Yb88 88__   88
+88 Y88  dP__Yb    YbdP       88"""   dP__Yb  88 Y88 88""   88  .o
+88  Y8 dP""""Yb    YP        88     dP""""Yb 88  Y8 888888 88ood8
+*/
+
+header.page_header{
+  text-align: center;
+  overflow-x: auto;
+  #name_plate {
+    width: 45%;
+    padding-left: 10%;
+    margin-top: 0;
+    float: none;
+  }
+  nav.page_navigation ul {
+    list-style: none;
+    background-color: $navy;
+    text-align: left;
+    li {
+      padding: 7px;
+      height: 100px;
+      a {
+        font-family: 'Docker', sans-serif;
+        font-weight: 700;
+        font-size: 1.5em;
+        font-variant: small-caps;
+        text-decoration: none;
+        color: $gold;
+        text-shadow: 0 0 20px black;
+        &:hover,
+        &.current {
+          border-bottom: 2px solid $gold;
+        }
+      }
+      @media screen and (max-width: 1275px){
+        position: relative;
+        right: 15px;
+        padding: 2px;
+        height: 80px;
+        a {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
+
+/*
+8b    d8    db    88 88b 88
+88b  d88   dPYb   88 88Yb88
+88YbdP88  dP__Yb  88 88 Y88
+88 YY 88 dP""""Yb 88 88  Y8
+*/
+
+section.primary {
+  width: 50%;
+  float: left;
+  clear: both;
+  margin: 0 10px;
+}
+section.secondary {
+  width: 35%;
+  float: right;
+  margin: 0 10px;
+}
+.primary_text,
+.secondary_text {
+  @include p-default;
+}
+p.caption {
+  display: none;
+}
+
+/*
+   db    88""Yb  dP"Yb  88   88 888888
+  dPYb   88__dP dP   Yb 88   88   88
+ dP__Yb  88""Yb Yb   dP Y8   8P   88
+dP""""Yb 88oodP  YbodP  `YbodP'   88
+*/
+div.about {
+  @include div-default;
+  overflow-x: auto;
+  position: absolute;
+  margin: auto;
+  top: 250px;
+  left: 15%;
+  @media screen and (max-width: 1375px) {
+    top: 166.66px;
+  }
+  h4.page_headline {
+    font-family: "Opificio", sans-serif;
+    font-size: 2.8em;
+    color: $gold;
+    margin: 0;
+    padding: 0 20px;
+    text-shadow: $box-shadow;
+  }
+  h2  {
+    @include headline-default;
+    font-size: 2.5em;
+    padding-bottom: 0;
+    @media screen and (max-width: 1275px) {
+      font-size: 2.0em;
+    }
+  }
+  span {
+    font-size: .9em;
+    font-style: italic;
+    text-indent: each-line;
+    margin: 0 30px;
+    padding-top: 0;
+  }
+}
+div.about img#downtown,
+div.about img#graduation {
+  margin: 20px;
+  box-shadow: 0 0 20px black;
+  border-radius: 10px;
+  display: inline;
+}
+img#downtown {
+  height: 200px;
+  float: left;
+  position: relative;
+  left: 9%;
+  @media screen and (max-width: 1275px) {
+    height: 150px;
+  }
+}
+img#graduation {
+  height: 250px;
+  float: right;
+  position: absolute;
+  top: 3%;
+  right: 37%;
+  @media screen and (max-width: 1275px) {
+    height: 175px;
+    top: 1%;
+    right: 9%;
+  }
+}
+div.about section.secondary {
+  position: absolute;
+  top: 15%;
+  right: 1%;
+  p.secondary_text img {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    &#bootcamp_logo {
+      width: 100%;
+      height: auto;
+      padding: 10px auto;
+      border-radius: 10px;
+    }
+    &.partner {
+      display: inline;
+      padding: 10px 18px;
+      height: 27px;
+      width: 24%;
+      float: left;
+      border-radius: 8px;
+      @media screen and (max-width: 1275px) {
+        padding: 10px;
+      }
+    }
+  }
+}
+#engagement_photo {
+  height: 300px;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+  margin: 20px;
+  clear: both;
+  float: left;
+  position: relative;
+  left: 15%;
+  @media screen and (max-width: 1275px) {
+    height: 180px;
+  }
+}
+
+/*
+ dP""b8  dP"Yb  88b 88 888888    db     dP""b8 888888
+dP   `" dP   Yb 88Yb88   88     dPYb   dP   `"   88
+Yb      Yb   dP 88 Y88   88    dP__Yb  Yb        88
+ YboodP  YbodP  88  Y8   88   dP""""Yb  YboodP   88
+ */
+div.contact {
+  @include div-default;
+  overflow-x: auto;
+  position: absolute;
+  top: 250px;
+  left: 15%;
+  @media screen and (max-width: 1375px) {
+    top: 166.66px;
+  }
+  section.primary p.primary_text {
+    font-size: 1.1em;
+    padding: 20px 40px;
+  }
+  section.secondary {
+    position: absolute;
+    top: 15%;
+    right: 2%;
+  }
+}
+
+#headshot {
+  height: 200px;
+  float: left;
+  position: relative;
+  left: 10%;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 0 20px black;
+  @media screen and (max-width: 1275px) {
+    height: 150px;
+  }
+}
+#foco2 {
+  height: 250px;
+  float: right;
+  position: absolute;
+  top: 3%;
+  right: 39%;
+  display: inline;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 0 20px black;
+  @media screen and (max-width: 1275px) {
+    height: 150px;
+  }
+}
+
+div.contact h2 {
+  padding: 0 0 0 20px;
+  font-size: 2.5em;
+  margin: 0 auto;
+  @media screen and (max-width: 1275px) {
+    font-size: 2.0em;
+  }
+}
+ul.contact-info {
+  list-style: none;
+  padding:  20px;
+  background-color: $p-background;
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+  li a {
+    color: #db9815;
+    font-size: 2.25em;
+    text-shadow: 0 0 20px black;
+    text-decoration: none;
+    @media screen and (max-width: 1275px) {
+      font-size: 1.75em;
+    }
+  }
+}
+/*
+88""Yb 88      dP"Yb   dP""b8
+88__dP 88     dP   Yb dP   `"
+88""Yb 88  .o Yb   dP Yb  "88
+88oodP 88ood8  YbodP   YboodP
+*/
+div.blog {
+  @include div-default;
+  position: absolute;
+  top: 250px;
+  left: 15%;
+  @media screen and (max-width: 1375px) {
+    top: 166.66px;
+  }
+  section.article {
+    width: 70%;
+    float: left;
+  }
+}
+p.primary_article {
+  font-size: 1em;
+  margin: 10px 20px;
+  padding: 40px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+  text-align: left;
+  img {
+    /*height: 200px;
+    width: auto;
+    margin: 10px auto;
+    padding-left: 12.5%;*/
+    img {
+      position: absolute;
+      top: 3.5%;
+      margin: .93% 6%;
+    }
+  }
+  img#pi {
+    right: 5%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 48%
+  }
+  img#pi-logo {
+    width: 27%;
+  }
+  span {
+    font-size: .9em;
+    font-style: italic;
+    text-indent: each-line;
+    margin: 0 30px;
+  }
+  span.article_title {
+    font-family: "Docker", sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+  }
+  span#to_top {
+    text-align: center;
+  }
+}
+section.teaser  {
+  width: 25%;
+  float: right;
+  padding: 10px 0;
+  p.teaser_text {
+    @include p-default;
+    margin-top: 0;
+    font-weight: 400;
+    font-size: .9em;
+    background-color: rgb(255, 255, 255);
+    span {
+      font-weight: 300;
+      font-style: italic;
+    }
+  }
+}
+p.blog_links {
+  @include p-default;
+  font-size: 0.85em;
+  background-color: rgb(255, 255, 255);
+}
+
+/*
+88""Yb  dP"Yb  88""Yb 888888 888888  dP"Yb  88     88  dP"Yb
+88__dP dP   Yb 88__dP   88   88__   dP   Yb 88     88 dP   Yb
+88"""  Yb   dP 88"Yb    88   88""   Yb   dP 88  .o 88 Yb   dP
+88      YbodP  88  Yb   88   88      YbodP  88ood8 88  YbodP
+*/
+div.portfolio,
+div.design {
+  @include div-default;
+  overflow-x: auto;
+  position: absolute;
+  top: 250px;
+  left: 15%;
+  @media screen and (max-width: 1375px) {
+    top: 166.66px;
+  }
+  h2 {
+    @include headline-default;
+    position: relative;
+    top: 24px;
+    font-size: 2.5em;
+  }
+  h2#design_heading {
+    font-size: 1.8em;
+    color: $gold;
+  }
+  h4 {
+    font-family: "Opificio", sans-serif;
+    font-size: 2.0em;
+    color: $gold;
+    text-shadow: 0 0 20px black;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  a.project_link,
+  a#design_link,
+  a.arrow_link {
+    text-decoration: none;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    box-shadow: 0 0 20px black;
+  }
+  img.blue_arrow {
+    position: relative;
+    left: 3%;
+    height: 75px;
+    width: auto;
+    margin: 20px 3.5%;
+    box-shadow: none;
+    @media screen and (max-width: 1275px) {
+      height: 55px;
+    }
+  }
+}
+section.column-one {
+  width: 65%;
+  float: left;
+  margin: 0 10px;
+  @media screen and (max-width: 1275px) {
+    width: 63%;
+  }
+}
+section.column-two {
+  width: 31%;
+  float: right;
+  margin: 0 10px;
+}
+.portfolio_project > p {
+  @include p-default;
+  padding: 40px;
+  font-size: 1em;
+  font-weight: 400;
+  @media screen and (max-width: 1275px) {
+    font-size: 0.85em;
+  }
+  span.description {
+    font-family: "Oswald", sans-serif;
+    font-size: .9em;
+    font-weight: 300;
+    margin: 10px 40px;
+    @media screen and (max-width: 1275px) {
+      font-size: 0.8em;
+    }
+  }
+}
+li.treehouse {
+  position: relative;
+  bottom: 52px;
+  p {
+    @media screen and (max-width: 1275px) {
+      padding: 8px;
+      font-size: 0.85em;
+    }
+  }
+}
+div.portfolio img#treehouse-logo {
+  position: relative;
+  left: 33%;
+  box-shadow: none;
+  width: 30%;
+  height: auto;
+}
+/*
+8888b. 888888 .dP"Y8 88  dP""b8 88b 88
+8I  Yb 88__   `Ybo." 88 dP   `" 88Yb88
+8I  dY 88""   o.`Y8b 88 Yb  "88 88 Y88
+8888Y" 888888 8bodP' 88  YboodP 88  Y8
+*/
+div.design section.column-one {
+  width: 45%;
+  float: left;
+  margin: 0 10px;
+}
+div.design section.column-two {
+  width: 45%;
+  float: right;
+  margin: 0 10px;
+  position: relative;
+  top: 40px;
+}
+/*
+88""Yb 888888 .dP"Y8 88   88 8b    d8 888888
+88__dP 88__   `Ybo." 88   88 88b  d88 88__
+88"Yb  88""   o.`Y8b Y8   8P 88YbdP88 88""
+88  Yb 888888 8bodP' `YbodP' 88 YY 88 888888
+*/
+div.resume-wrapper {
+  @include div-default;
+  overflow-x: hidden;
+  text-align: center;
+  position: absolute;
+  top: 250px;
+  left: 15%;
+  @media screen and (max-width: 1375px) {
+    top: 166.66px;
+  }
+  object {
+    overflow-x: hidden;
+    width:  64%;
+    height: 100vh;
+    margin: 10px auto;
+    @media screen and (max-width: 1275px) {
+      width: 100%;
+    }
+  }
+}
+/*
+ dP"Yb  Yb    dP 888888 88""Yb 88        db    Yb  dP
+dP   Yb  Yb  dP  88__   88__dP 88       dPYb    YbdP
+Yb   dP   YbdP   88""   88"Yb  88  .o  dP__Yb    8P
+ YbodP     YP    888888 88  Yb 88ood8 dP""""Yb  dP
+*/
+div#overlay {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 2001;
+  padding: 25px 10px;
+  text-align: center;
+  img{
+    max-height: 90%;
+    max-width: 90%;
+  }
+}
+.overlay_caption {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 20%;
+  font-size: .8em;
+  line-height: 1.4;
+  color: snow;
+  text-align: left;
+}
+/*
+888888  dP"Yb   dP"Yb  888888 888888 88""Yb
+88__   dP   Yb dP   Yb   88   88__   88__dP
+88""   Yb   dP Yb   dP   88   88""   88"Yb
+88      YbodP   YbodP    88   888888 88  Yb
+*/
+footer.page_footer {
+  height: 120px;
+  font-size: .85em;
+  font-family: "Opificio", sans-serif;
+  clear: both;
+  position: fixed;
+  top: 86%;
+  text-align: left;
+  color: #db9815;
+  p {
+    font-family: 'Oswald', serif;
+    color: #db9815;
+    clear: both;
+    padding: 20px 10px 10px 15px;
+  }
+  .social {
+    padding: 5px;
+    @media screen and (max-width: 1275px) {
+      position: relative;
+      right: 8px;
+    }
+  }
+  img.first_icon {
+    padding-left: 5px;
+    @media screen and (max-width: 1475px) {
+    }
+  }
+  @media screen and (max-width: 1475px) {
+    p {
+      padding: 20px 0 10px 0;
+      font-size: .7em;
+    }
+    .social {
+      padding: 1px;
+    }
+  }
+}

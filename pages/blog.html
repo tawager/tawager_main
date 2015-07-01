@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../main-styles.css" type="text/css">
+    <link rel=" stylesheet" href="../page-styles.css" type="text/css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../overlay.js"></script>
+    <title>aw | Blog</title>
+</head>
+<body>
+<header class="page_header">
+    <a href="../index.html">
+        <img id="name_plate" src="../images/name_plate.png" alt="andy-name-plate">
+    </a>
+    <nav class="page_navigation">
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="current" href="blog.html">Blog</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+<div class=" blog">
+    <h2>From the Blue Room</h2>
+    <section class="article">
+        <p class="primary_article">
+            <br>
+            <span class="article_title">Raspberry Pi, Node.js, and a Total Beginner</span>
+            <br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My dad is an electronics technician for the federal government, and I have always been jealous of his ability to look at schematics and electrical diagrams and know immediately what he needed to do to get something working.
+            By that time, I might be able to tell which side is up and which side is down. It's always been something I've wanted to learn, but I've never really had a good reason.
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Luckily, the world really caters to the 99.7% of us who aren't experts at soldering tiny components. That's probably a good thing, but doesn't help those who are so naturally curious that they would never be able to forgive themselves if they didn't master it to some small degree.
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I fall in that latter category, and I know many others that do as well. This is for them.
+            <br><br>
+                <img id="pi" src="../images/Rpi.jpg">
+                <img id="pi-logo" src="../images/pi_logo.png">
+            <br> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.raspberrypi.org/">The Raspberry Pi</a> is a lot of things, but most basically, it's just a low-cost, credit-card-sized computer CPU. It was developed by a UK company as an inexpensive way to teach kids how computers work and how to program them.
+            It has since EXPLODED among the "Maker" community as a powerful and extremely versatile device that is able to facilitate an almost infinite number of projects and inventions.
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; They are so popular, in fact, that in their first few months on the market, production could not keep up with the demand, and RPis were backordered on many websites for several months afterwards.
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It's driven by a Linux operating system, which programmers might recognize
+            as a "pure" OS alternative to Windows, but many others are familiar with it as the base for the Darwin platform that runs Apple's new OS X.
+            <br><br>
+	        <span>From the Raspberry Pi website:
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"It’s capable of doing everything you’d expect a desktop computer to do, from
+            browsing the internet and playing high-definition video, to making spreadsheets, word-
+            processing, and playing games.
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What’s more, the Raspberry Pi  has the ability to interact with the outside world, and has been used in a wide array of digital maker projects, from music machines and parent detectors to weather stations and tweeting birdhouses with infra-red cameras.”
+            </span>
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When they say "a wide array" of projects, they are making an incredible understatement. Thanks to the huge number of accessories on the market, you can hook your RPi to humidity sensors, cameras, LED matrices,
+            and any combination of the thousand other compatible products and components that are available for it, (most of which are surprisingly inexpensive).
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The enormous variety of potential projects is wonderful, yet paralyzing. There have been devices to control music, make music, water your plants, watch your pets, formulate a weather report, and so many other things.
+            I don't use the "L" word lightly, but the list of possibilities seems to be LITERALLY endless.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Like I said, the variety is wonderful, but, just like my nagging need to learn how to read schematics and make something cool out of a circuit board computer, I have an equally strong and equally obnoxious need to forge my own path.
+            I just can't be happy doing a project if I know that someone else has already done the exact same project in the exact same way I'm doing it.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            To that end, I'm fortunate that the Raspberry Pi is a pretty big seller around Christmas as an inexpensive gift item for any geeks that holiday shoppers may know (even the well-equipped B+ model is under $40), because there was a plethora of articles and tutorials circulating around the Internet in the few weeks following December 25...
+            pretty smart of writers and marketers to take advantage of all of people's Christmas break down-time to get new makers started off on some basics.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Like I said, the variety is wonderful, but, just like my nagging need to learn how to read schematics and make something cool out of a circuit board computer, I have an equally strong and equally obnoxious need to forge my own path. I just can't be happy doing a project if I know that someone else has already done the exact same project in the exact same way I'm doing it.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            To that end, I'm fortunate that the Raspberry Pi is a pretty big seller around Christmas as an inexpensive gift for holiday shoppers' favorite geeks (even the well-equipped B+ model is under $40), because there were a plethora of great articles and beginner tutorials circulating around the Internet in the few weeks following December 25...
+            Pretty smart of writers and marketers to take advantage of all of people's Christmas break down-time to get new Makers started off on some basics.
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="article_link" href="http://www.raspberrypi.org/merry-christmas-got-a-new-pi/">Merry Christmas! Got a New Pi? Read On!</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="article_link" href="http://www.itpro.co.uk/mobile/21862/raspberry-pi-top-15-projects-to-try-over-christmas">Raspberry Pi: Top 15 Projects to try over Christmas</a>
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Despite many hours reading through articles like these and countless other "Top 10 Projects for Makers"-type lists, I had a lot of potential ideas for my RasPi, but I couldn't come up with a project that would help make anyone's life easier (the goal of any of my projects).
+            Like I said, thousands of other people much smarter than I am are everywhere on the web, sharing instructions, answering questions, and posting articles. However, very few of them are targeted at COMPLETE beginners, and the only articles that are usually outline a 5th grade class assignment.
+            The most frustrating moment of my entire experience though, was coming across the <a href="https://raspberrypikid.wordpress.com/">blog of a 13 year-old who calls himself "Raspberry Pi Kid"</a> who has been writing for two years now about his experiences as a programmer/tinkerer. Not only was his writing very eloquent for his age,
+            but his technical prowess put me to shame, and the advice and guidance that he offered would have seemed fitting coming from a tenured Computer Science professor in the Ivy League.
+            <br><br>
+            MY PROJECT:
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            After my shame subsided, I took a look at a few of my preferred sites for ordering sensors and accessories. Sometimes just knowing what tools are available to work with, and the capabilities of those tools, can be easiest way to visualize project ideas. Just like when building with Legos,
+            sometimes you have to through the bucket for a while before you decide what you want to build, or what you CAN build. Except in this case, "Lego pieces" represent displays, modules, servos, and sensors of even more shapes, colors, and potential implementations than those plastic toy bricks could ever dream of.
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.sparkfun.com/categories/233">SPARKFUN</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://www.makershed.com/collections/raspberry-pi">MAKER SHED</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://www.adafruit.com/category/105">ADAFRUIT</a>
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            My favorite among those, Adafruit, was having a sweet sale on gf775 temperature sensors. There is an abundance of tutorials for temperature, humidity, and soil-moisture sensor projects on almost every site that has any association with the RasPi, and, especially for my first project,
+            I felt it would be great to start somewhere with a large community of peers' resources at my disposal. After my first few projects, I can be a bit more of a maverick, but no one wants to be Icarus.
+            <br><br>
+            <a href="#"> <span id="to_top">Back to Top</span></a>
+        </p>
+    </section>
+    <section class="teaser">
+        <p class="teaser_text">
+            Next Week...
+            <br><br>
+	        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Continuing my adventure with Raspberry Pi, Node.js, and the Nest thermostat.</span>
+        </p>
+        <h2>This Week's Links</h2>
+        <p class="blog_links">
+            <a class="article_link" href="http://www.element14.com/community/community/raspberry-pi/blog/2014/12/19/2014-year-in-review-ten-incredible-raspberry-pi-b-projects?CMP=SOM-YIR-2014-RASPBERRYPIPROJECTS">2014 In Review: 10 Incredible Raspberry Pi B+ Projects</a>
+            <br><br>
+            <a class="article_link" href="http://www.raspberrypi.org/merry-christmas-got-a-new-pi/">Merry Christmas! Got a New Pi? Read On!</a>
+            <br><br>
+            <a class="article_link" href="http://www.itpro.co.uk/mobile/21862/raspberry-pi-top-15-projects-to-try-over-christmas">Raspberry Pi: Top 15 Projects to try over Christmas</a>
+            <br><br>
+            <a class="article_link" href="http://makezine.com/2014/12/14/10-perfect-diy-projects-for-makers-who-love-their-pets/">10 Perfect DIY Projects for Makers Who Love their Pets</a>
+            <br><br>
+            <a class="article_link" href="http://weworkweplay.com/play/raspberry-pi-nodejs/">Raspberry Pi + Node.js</a>
+            <br><br>
+            <a class="article_link" href="https://raspberrypikid.wordpress.com/">Raspberry Pi Kid</a>
+            <br><br>
+            SHOPS
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.sparkfun.com/categories/233">SPARKFUN</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://www.makershed.com/collections/raspberry-pi">MAKER SHED</a>
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://www.adafruit.com/category/105">ADAFRUIT</a>
+        </p>
+        <h2>Archive</h2>
+        <p class="archive_article">None yet</p>
+        <a class="archive_article"></a>
+        <p class="archive_article"></p>
+        <p class="archive_article"></p>
+    </section>
+</div>
+<footer class="page_footer">
+    <a href="https://www.facebook.com/andy.wager.3" target="_blank">
+        <img class="social first_icon" src="http://www.niftybuttons.com/retro/32/facebook.png" align="left" border="0" style="margin:1px;">
+    </a>
+    <a href="http://twitter.com/intent/tweet?screen_name=saintwager" target="_blank">
+        <img class="social" src="http://www.niftybuttons.com/retro/32/twitter.png" border="0" style="margin:1px;"  align="left">
+    </a>
+    <a href="http://www.linkedin.com/pub/thomas-“andy”-wager/61/831/545" target="_blank">
+        <img class="social" src="http://www.niftybuttons.com/retro/32/linkedin.png" border="0" style="margin:1px;"  align="left">
+    </a>
+    <a href="https://plus.google.com/u/0/110048120316975263441/about/p/pub" target="_blank">
+        <img class=" social" src="http://www.niftybuttons.com/retro/32/google-plus.png" border="0" style="margin:1px;" align="left">
+    </a>
+    <p>&copy; 2015 thomas andrew wager</p>
+</footer>
+</body>
+</html>
